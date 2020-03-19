@@ -2,25 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         /* Media Queries */
         @media screen and (max-width: 400px) {
-
+            body {
+                background-color: red;
+            }
         }
 
         @media screen and (min-width: 401px) and (max-width: 400px) {
-
+            body {
+                background-color: blue;
+            }        
         }
 
         @media screen and (max-width: 768px) {
-
+            body {
+                background-color: green;
+            }        
         }
         
     </style>
 </head>
 <body>
-    
+    <!-- start of wrapper -->
+    <div class="wrapper">
+        <!-- start of wrapper inner -->
+        <div class="wrapper-inner">
+            <table class="outer-table"> <!-- this will the gray outer table on the top -->
+                <tr>
+                    <td class="header">
+                        <p><a href="https://www.google.com/">Click to view this e-mail in your browser</a></p>
+                    </td>
+                </tr>
+            </table> <!-- end of outer table -->
+        </div>
+    </div> 
+        <!-- end of wrapper inner-->
+    <!-- end of wrapper -->
 </body>
 </html>
