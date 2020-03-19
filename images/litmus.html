@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        @media screen and (max-width: 600px) {
+            table[class="responsive-table"] {
+                width: 100% !important;
+                padding: 10px 5%;
+
+            }
+
+            table[class="responsive-table2"] {
+                width: 100% !important;
+            }
+            img[class="responsive-image"] {
+                max-width: 100% !important;
+                width: 100%;
+                /* because there is inline html attribute we need to use !important to overwrite*/
+                height: auto !important;
+            }
+
+            td[class="headline"] {
+                font-size: 36px !important;
+                background: #222222;
+                color: #ffffff;
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td align="center">
+                <!-- 600px container -->
+                <table width="600" cellspaacing="0" cellpadding="0" border="0" class="responsive-table">
+                    <tr>
+                        <img src="../images/icebear.png" alt="icebear" class="responsive-image">
+                    </tr>
+                    <tr>
+                        <td align="center" style="font-size: 48px; padding-top: 20px;" class="headline">
+                            I &hearts; Stock Photos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px 0; font-size: 20px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in, ipsum quas impedit eligendi minima natus provident, incidunt consequatur ipsa doloremque quia exercitationem nulla totam sit aliquid vel excepturi culpa?
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="290" align="right" cellspacing="0" cellpadding="0" border="0" class="responsive-table2">
+                                <tr>
+                                    <td bgcolor="#dddddd" style="padding: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eveniet illum fugit sit ipsum saepe ea molestias. Perferendis suscipit adipisci sed nihil fugiat facere porro rerum, unde et, officia voluptate!</td>
+                                </tr>
+                            </table>
+                            <table width="300" align="left" cellspacing="0" cellpadding="0" border="0" class="responsive-table2">
+                                <tr>
+                                    <td bgcolor="#aaaaaa" style="padding: 15px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil error adipisci facere amet, minus hic repudiandae consectetur dolorum natus, incidunt perferendis voluptates tempore excepturi veniam exercitationem. Est repudiandae placeat modi.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
